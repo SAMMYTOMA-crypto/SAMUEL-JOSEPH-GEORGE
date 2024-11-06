@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    
-</head>
-    <h1><em>This Is My First Website!</em></h1>
-    <hr>
-    <br>
-<body>
-    <h1>Hello World!</h1>
-    <h2>Hello World!</h2>
-    <h3>Hello World!</h3>
-    <h4>Hello World!</h4>
-    <h5>Hello World!</h5>
-    <h6>Hello World!</h6>
-    
-    <br>
-    <p>
-        <code>&lt;hr&lt;</code>stands for horizontal rule</p>
-    </p>
+<html>
+    <head>
+        <title>Web Development</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="Netisens Web Dev">
+        <meta name="author" content="Netisens Students">
+        <meta http-equiv="refresh" content="5">
+        <!-- Responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #header {background-image: url(img/b2.jpg);}
+        </style>
+        
+    </head>
 
-    <p>
-        &amp;
-        &copy;
-        &gt;
-        &realpart;
-    </p>
-    <input type="placeholder" style="color: black; background-size: cover; background-color: blue;" >
-    
+    <body>
+       <div id="header">
+            <h1>Welcome To My Webpage</h1>
+            <p>Use the menu to select different Stylesheets</p>
+       </div>
 
+        <div>
+            <h1 class="pages">Same Page Different Stylesheets</h1>
 
-    <p style="color:grey;">
-        This Is My First Website!
+            <p class="body">
+                This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+            </p>
+            <div class="links">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://github.com/ucheblessed28/netweb">GitHub</a>
+            </div>
 
+            <h1 class="pages">No Styles</h1>
 
-    </p>
+            <p class="body" style="text-align: center;">
+                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                <a href="#">Stylesheet</a>
+            </p>
+        </div>
 
-    <a href="https://www.goggle.com" target="_blank"><strong>GOGGLE</strong></a>
-    <br>
+        <div id="middle">
+            <h2>Side-Bar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+       </div>
 
-    <img src="c:\Users\SAMUEL GEORGE\Downloads\11221451.jpg" alt="image description" width="100px" height="100px"> 
-</body>
+       <div id="footer">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+        <p id="footer-text">
+            &copy; 2024. Coded With ❤️ By Netizens ICT Web Dev Students
+        </p>
+   </div>
+    </body>
 </html>
