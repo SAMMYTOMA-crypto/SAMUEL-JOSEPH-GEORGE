@@ -8,7 +8,7 @@
     width: 100%;
     padding: 12px;
     border: 1px solid blue;
-    border-radius: 4px;
+    border-radius: 15px;
     resize: vertical;
   }
   
@@ -24,7 +24,7 @@
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 25px;
     cursor: pointer;
     display: inline;
   }
@@ -41,7 +41,7 @@
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 25px;
     cursor: pointer;
     display: inline;
   }
@@ -109,7 +109,7 @@
       font-size: 2rem;
       }
       /* Adjust font sizes for even smaller screens */
-      @media (max-width: 480px) {
+      @media (max-width: 880px) {
       font-size: 1rem;
     }
   }
@@ -117,7 +117,7 @@
   
   
   .header-text h1 {
-      color: #ccc;
+      color: red;
       text-align: center;
       padding-top: 20px;
       font-size: 6rem;
@@ -160,6 +160,7 @@
     }
   
   .feature {
+
       color: black;
       font-weight: 400;
       font-size: 2.8rem !important;
@@ -167,13 +168,18 @@
       padding-top: 20px;
       padding-block-end: 50px;
       margin-bottom: 20px;
+      
   }
   
   .feature h3 {
+    input[type=features]:hover {
+      color: #af4c4c;
+
+    }
       border-bottom: solid 4px black;
       display: inline-block;
       font-weight:inherit ;
-      padding-bottom: 10px;
+      padding-bottom: 30px;
       /* Adjust font size for smaller screens */
       @media (max-width: 768px) {
           font-size: 4rem;
@@ -197,9 +203,15 @@
         grid-template-columns: 1fr; /* One column per row */
       }
     }
-    
-    .grid-item {
-      padding: 20px;
+    .grid-item{
+     padding: 20px;
+     border-radius: 25px;
+     transition: box-shadow 0.3 ease-in-out;/* Adjust transition duration as needed*/
+    }
+
+    .grid-item:hover {
+      box-shadow: 0px 5px 10px black
+      ;transform: scale(1.05)
     }
   
     .text-center {
@@ -214,3 +226,4 @@
     filter: blur(3px);
     opacity: 0.5;
   } 
+  
